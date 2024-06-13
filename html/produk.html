@@ -4,9 +4,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Outfitku</title>
+  <title>Admin</title>
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
 </head>
+
+<style>
+        .sorting {
+            margin-right: auto;
+            display: inline-block;
+        }
+        .sorting select {
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #77797b;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #343a40;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 10px 10px;
+        }
+        .sorting select:focus {
+            border-color: #0056b3;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+    </style>
 
 <body>
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -15,7 +42,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../images/Screenshot 2024-06-08 204439.png" width="180" alt="" />
+            <img src="../images/logo awal fix.png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -107,14 +134,25 @@
             <div class="col-md-12 mb-3">
               <button id="addArticleBtn" class="btn btn-success" onclick="location.href='add-product.html';">Add Product</button>
           </div> 
+                    <div class="filter-bar d-flex flex-wrap align-items-center">
+            <div class="sorting mr-auto">
+              <select>
+                <option value="1">Nasi kotak</option>
+                <option value="1">Prasmanan</option>
+                <option value="1">Joglo</option>
+                <option value="1">Jajanan</option>
+              </select>
+            </div>
+          </div>
+          <p></p>
           <div class="row">
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../images/sepatu.jpg" class="card-img-top rounded-0" alt="..."></a>
+                  <a href="javascript:void(0)"><img src="../images/nasikotak.jpg" class="card-img-top rounded-0" alt="..."></a>
                 </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Sneakers</h6>
+                  <h6 class="fw-semibold fs-4">Paket A</h6>
                   <div class="d-flex align-items-center justify-content-between">
                     <h6 class="fw-semibold fs-4 mb-0">Rp 50.000</h6>
                   </div>
@@ -124,10 +162,10 @@
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../images/man-wearing-blank-shirt.jpg" class="card-img-top rounded-0" alt="..."></a>
+                  <a href="javascript:void(0)"><img src="../images/nasikotak.jpg" class="card-img-top rounded-0" alt="..."></a>
                 </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Kaos Polo</h6>
+                  <h6 class="fw-semibold fs-4">Paket b</h6>
                   <div class="d-flex align-items-center justify-content-between">
                     <h6 class="fw-semibold fs-4 mb-0">Rp 100.000</h6>
                   </div>
@@ -137,82 +175,16 @@
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../images/kaostinggi.jpg" class="card-img-top rounded-0" alt="..."></a>
+                  <a href="javascript:void(0)"><img src="../images/nasikotak.jpg" class="card-img-top rounded-0" alt="..."></a>
                 </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Kaos</h6>
+                  <h6 class="fw-semibold fs-4">Paket c</h6>
                   <div class="d-flex align-items-center justify-content-between">
                     <h6 class="fw-semibold fs-4 mb-0">Rp 50.000</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="card overflow-hidden rounded-2">
-                <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../images/men-s-apparel-hoodie-rear-view.jpg" class="card-img-top rounded-0" alt="..."></a>
-                </div>
-                <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Hoodie</h6>
-                  <div class="d-flex align-items-center justify-content-between">
-                    <h6 class="fw-semibold fs-4 mb-0">Rp 150.000</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><div class="row">
-          <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-              <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../images/sepatu.jpg" class="card-img-top rounded-0" alt="..."></a>
-              </div>
-              <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Sneakers</h6>
-                <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">Rp 250.000</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-              <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../images/man-wearing-blank-shirt.jpg" class="card-img-top rounded-0" alt="..."></a>
-              </div>
-              <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Kaos Polo</h6>
-                <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">Rp 100.000</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-              <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../images/portrait-male-tennis-player.jpg" class="card-img-top rounded-0" alt="..."></a>
-              </div>
-              <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Tennis Outfit</h6>
-                <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">Rp 250.000</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-              <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../images/men-s-apparel-hoodie-rear-view.jpg" class="card-img-top rounded-0" alt="..."></a>
-              </div>
-              <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Hoodie</h6>
-                <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">Rp 150.000</h6>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         </div>
       </div>
